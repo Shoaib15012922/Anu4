@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');/*Google Font*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: 'Nunito', sans-serif;
+}
+ :root{
+    --bg-color: #3144d1;
+    --text-color: #fff;
+    --snd-bf-color: #082187;
+    --main-color : #59b2f4
+ }
+
+ html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+ }
+
+ body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+ }
+
+ section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+ }
+
+ .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 9%;
+    background-color: var(--snd-bf-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+ }
+
+ .logo{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--main-color);
+    cursor: default;
+    text-decoration: none;
+ }
+
+.navbar a{
+    font-size: 1.5rem;
+    color: var(--main-color);
+    margin-left: 4rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    color: white;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home h2{
+    font-size: 3.2rem;
+    font-weight: 700;
+    animation: slide-from-left 3s ease-in-out forwards;
+}
+    
+    
+    
+
+.home-content h2:nth-of-type(2){
+    margin-bottom: 2rem;
+}
+
+.home-content h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+    opacity: 0; 
+    animation: slide-from-left 2s ease-in-out forwards;
+  }
+  
+  
+
+.home-content p{
+    font-size: 1.8rem;
+    margin: 2rem 0;
+    opacity: 0; 
+    animation: slide-from-left 5s ease-in-out forwards;
+  }
+  
+  @keyframes slide-from-left {
+    from {
+      transform: translateX(-100%);  
+    }
+    to {
+      transform: translateX(0);  
+      opacity: 1;  
+    }
+  }
+
+.home-img img{
+    border-radius: 50%;
+    width: 25vw;
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage{
+    0%, 100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+}
+
+.story{
+  background: var(--snd-bg-color);
+}
+
+.heading {
+  margin-bottom: 4rem;
+  text-align: center;
+  font-size: 20rem;  
+  opacity: 0.5;
+  transition: font-size 0.5s ease-in-out, opacity 0.5s ease-in-out; 
+}
+
+.heading:hover {
+  font-size: 16rem; 
+  opacity: 1; 
+}
+
+
+.story-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 2.5rem;
+
+}
+
+.story-container .story-box{
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem var(--bg-color);
+}
+.story-box img{
+  width: 100%;
+  opacity: 0.8;
+  transition: 0.5s ease;
+}
+
+.story-box:hover img{
+  transform: scale(1.1);
+}
+
+.story-box .story-layer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 4rem;
+  background: linear-gradient(rgba(9, 48, 187, 0.961),var(--main-color));
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  transition: 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.story-box:hover .story-layer{
+  transform: translateY(0);
+}
+
+.story-layer h2{
+  font-size: 3rem;
+}
+
+.story-layer p{
+  font-size: 1.6rem;
+  margin: 0.3rem 0 1rem;
+}
+
+.story-layer a{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width:5rem
+  height:5rem;
+  font-size: 2rem;
+  color:white;
+}
+
+.footer{
+
+  background: var(--snd-bf-color);
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 9%;
+  margin-top: 100px;
+  display: flex;
+  font-size: 1.6rem;
+  height: 1%;
+}
+
+
+.btn{
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background: var(--main-color);
+  color: white;
+  font-size: 1.6rem;
+  border-radius: 4rem;
+  margin-top: 2rem;
+  transition: 0.5s ease;
+  }
+
+.btn:hover{
+  background: pink;
+  color: red;
+}
