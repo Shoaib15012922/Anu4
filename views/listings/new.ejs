@@ -1,7 +1,7 @@
 <%= layout('/layouts/boilerplate'); %>
 <div class = "row">
 <div class = "col-8 offset-2">
-<h3>Create a New Listing</h3>
+<h3>Add Your Story</h3>
 
 <form action="/listings" method="post">
 <div class = "mb-3">
@@ -20,25 +20,8 @@
 <label for="title" class = "form-label">Image</label>
 <input name = "listing[image]" placeholder="enter image link" type ="text" class = "form-control">
 </div>
-<div class = "row">
-    <div class="col-md-4">
-<div class = "mb-3">
-<label for="title" class = "form-label">Price</label>
-<input class = "form-control" name = "listing[price]" placeholder="enter price" type ="number">
-</div>
-</div>
-<div class="col-md-8">
-<div class = "mb-3">
-<label for="title" class = "form-label">Country</label>
-<input name = "listing[country]" placeholder="enter country" type ="text" class = "form-control">
-</div>
-</div>
-</div>
 
-<div class = "mb-3">
-<label for="title" class = "form-label">Location</label>
-<input name = "listing[location]" placeholder="enter location" type ="text" class = "form-control">
-</div>
+
 
 <button type = "submit" class = "btn btn-dark add-btn">Add</button>
 </form>
