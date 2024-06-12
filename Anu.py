@@ -12,7 +12,7 @@ def to_markdown(text):
   text = text.replace('•', '  *')
   return Markdown(textwrap.indent(text, '> ', predicate=lambda _: True))
 
-genai.configure(api_key= "AIzaSyDDSWDpG7-vyJiBZXeTagXoE1Kd6gU1EFU")
+genai.configure(api_key = GEMINI_API_Key)
 
 model = genai.GenerativeModel('gemini-pro')
 prompt_behaviour = " your main objective is to make persons motivated and feel good.Listen to their problems and " \
