@@ -4,7 +4,7 @@ const Listing = require("../models/listing.js");
 require('dotenv').config();
 
 
-const dbUrl = process.env.ATLASDB_URL
+const dbUrl = "mongodb+srv://Shoaib:Shoaib-1501@cluster0.vb1vuls.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 main()
     .then(() => {
         console.log('Connected to MongoDB');

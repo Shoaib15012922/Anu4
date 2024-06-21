@@ -208,19 +208,21 @@
   color:white;
 }
 
-.footer{
-
-  background: var(--snd-bf-color);
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 2rem 9%;
-  margin-top: 100px;
+.f-info{
   display: flex;
-  font-size: 1.6rem;
-  height: 1%;
+  height : 8rem;
+  background-color : var(--snd-bf-color);
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: space-evenly;
+  text-align: center;
 }
-
+.f-info-brand{
+    width : 100%;
+    font-size: 2rem;
+    margin-right: 1rem;
+    margin: 1rem;
+}
 
 .btn{
   display: inline-block;
@@ -237,3 +239,14 @@
   background: pink;
   color: red;
 }
+
+.story-btns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  width: 40%;
+  margin-left: 35rem;
+  margin-bottom: 4rem;
+}
+
